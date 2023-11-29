@@ -1,7 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {useInsertionEffect,useState} from 'react';
+import axios from 'axios';
 
 function App() {
+  axios[mensagemAPI,setMensagemAPI] = useState
+  userEffect(() =>{
+    axios.get('hhtps')
+    .then(Response =>{
+      setMensagemAPI(Response.data.mensagem);
+    })
+    .catch(error =>{
+      console.error(`erro ao obter da API:`),error
+    })
+  }
+  )
   return (
     <div className="App">
       <header className="App-header">
