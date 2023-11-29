@@ -5,9 +5,6 @@ const theme = createTheme({
         primary:{
             main:'blue'
         }
-        secondary:{
-            main:'red'
-        }
     },
     typography:{
         fontFamily:+'Arial,sans-serif'

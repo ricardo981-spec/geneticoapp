@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, {userEffect,useState} from 'react';
 import axios from 'axios';
@@ -18,6 +17,7 @@ function App() {
   return (
     <div>
       <h1>{mensagemAPI}</h1>
+      
     </div>
   );
 }
