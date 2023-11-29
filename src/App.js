@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import React, {useInsertionEffect,useState} from 'react';
+import React, {userEffect,useState} from 'react';
 import axios from 'axios';
 
 function App() {
-  axios[mensagemAPI,setMensagemAPI] = useState
+  const [mensagemAPI,setMensagemAPI] = useState('')
   userEffect(() =>{
-    axios.get('hhtps')
+    axios.get('http:localhost:3001/api/exemplo')
     .then(Response =>{
       setMensagemAPI(Response.data.mensagem);
     })
@@ -16,21 +16,8 @@ function App() {
   }
   )
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>{mensagemAPI}</h1>
     </div>
   );
 }

@@ -12,6 +12,6 @@ app.get('./api/exemplo',(req,res)=>{
      res.json({mensagem: 'bem vindo ao apí'})
 })
 
-app.linsten(PORT, () =>{
+app.listen(PORT, () =>{
     console.log (`Servidor rodando na porta ${PORT}`)
 })
