@@ -1,8 +1,18 @@
-function getObjeto(req,res){
+import { getTodosObjetos } from "../servicos/objeto"
 
-        res.json({mensagem:"bem vindo á API"})
+function getTodosObjetos(req,res){
+
+        res.json(getTodosObjetos())(
+        )
     }
+    function getObjeto(req,res){
 
+        const id = req.params.id
+        const objeto = getObjetoPorId(id)
+
+        res.json(objeto)
+    }
 module.export = {
-    getObjeto
+    getObjeto,
+    getTodosObjetos
 }

@@ -1,0 +1,19 @@
+[
+    {
+        "id":"1",
+        "nome": "objeto",
+        "cor": "preto"
+    },
+    {
+        {
+            "id":"2",
+            "nome": "objeto2",
+            "cor": "branco"
+        }
+    },
+    {
+        "id":"3",
+        "nome": "objeto3",
+        "cor": "cinza"
+    }
+]
