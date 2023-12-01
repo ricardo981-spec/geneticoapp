@@ -12,7 +12,14 @@ function getTodosObjetos(req,res){
 
         res.json(objeto)
     }
+
+    function postObjeto(req,res){
+        const objetoNovo = req.body
+        insereObjeto(objetoNovo)
+        res.send("objeto inserido com sucesso")
+    }
 module.export = {
     getObjeto,
-    getTodosObjetos
+    getTodosObjetos,
+    postObjeto
 }

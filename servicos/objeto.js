@@ -12,8 +12,13 @@ function.getObjetoPorId(Id){
     const objetoFiltrado = objetos.filter (objeto => objeto === Id)
     return objetoFiltrado
 }
+function insereObjeto(objetoNovo){
+    const novaListaObjetos = [...objetos,objetoNovo]
+    fs.writeFileSync("objeto.json",JSON.stringify(novaListaObjetos))
+}
 
 module.exports = {
     getTodosObjetos,
-    getObjetoPorId
+    getObjetoPorId,
+    insereObjeto
 }
