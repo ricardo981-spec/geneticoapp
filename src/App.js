@@ -9,9 +9,6 @@ function App() {
     .then(Response =>{
       setMensagemAPI(Response.data.mensagem);
     })
-    .catch(error =>{
-      console.error(`erro ao obter da API:`),error
-    })
   }
   )
   return (

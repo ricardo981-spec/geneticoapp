@@ -1,4 +1,4 @@
-import{createTheme} from '@mui/materiaç/style'
+import {createTheme} from '@mui/material/style'
 
 const theme = createTheme({
     palette:{

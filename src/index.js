@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import theme from './style/theme/meutheme'
-import {BrowserRouter,Routes,Route} from "react-router-dom"
+import theme from '../src/style/theme/theme.js';
+import {BrowserRouter,Routes,} from "react-router-dom"
+import {ThemeProvider} from '@mui/material/style' 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
