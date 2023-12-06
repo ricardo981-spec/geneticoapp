@@ -9,4 +9,6 @@ router.get('/:id',getObjeto)
 
 router.post('/',postObjeto)
 
+router.patch('/:id', patchCurso)
+
 module.export = router
