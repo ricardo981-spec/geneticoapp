@@ -25,10 +25,16 @@ function patchCurso(req,res){
     modificarObjeto(body, id)
     res.send("Objeto modificado com sucesso")
 }
+function deleteObjeto(id){
+    const id = req.params.id
 
+    deleteObjeto(id)
+    res.send("Objeto deletado com sucesso!")
+}
 module.exports = {
     getObjeto,
     getObjetos,
     postObjeto,
-    patchCurso
+    patchCurso,
+    deleteObjeto
 }

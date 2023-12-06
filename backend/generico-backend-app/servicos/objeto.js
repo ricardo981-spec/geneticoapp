@@ -26,10 +26,15 @@ function modificarObjeto(modificacaos, id){
 
     fs.writeFileSync("objeto.json",JSON.stringify(objetos))
 }
-
+function deleteObjeto(id){
+    const objetosFiltrados = objetos.filter(objeto => objeto.id !== id)
+    
+    fs.writeFileSync("objeto.json",JSON.stringify(objetos))
+}
 module.exports = {
     getTodosObjetos,
     getObjetoPorId,
     insereObjeto,
-    modificarObjeto
+    modificarObjeto,
+    deleteObjeto
 }
