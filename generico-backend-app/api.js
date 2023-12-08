@@ -1,17 +1,15 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
+const express = require("express")
+const cors = require("cors")
+const rotaObjeto = require("./rotas/objetos")
 
-const rotaObjetos = require("./rotas/objeto")
+const app = express()
+app.use(express.json())
+app.use(cors({origin:"*"}))
 
-const app = express();
-const PORT = 3001;
+app.use('/objetos', rotaObjeto)
 
-app.use(cors());
-app.use(bodyParser.json());
+const port = 3001
 
-app.use('/api', rotaObjetos);
-
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
+app.listen(port, () => {
+    console.log(`Escutando a porta ${port} `)
+})
